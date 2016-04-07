@@ -10,17 +10,25 @@
     </div>
 
     <div id="content">
-        <h1>News</h1>
+        <h2>Последние новости</h2>
+        <?php
+        $mypost = array( 'post_type' => 'news', );
+        $loop = new WP_Query( $mypost );
+        ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <header class="entry-header">
+                    <!-- Display featured image in right-aligned floating div -->
+                    <div style="float: right; margin: 10px">
+                        <?php the_post_thumbnail( array( 100, 100 ) ); ?>
+                    </div>
+                    <!-- Display Title and Author Name -->
+                    <p style="background-color: #ECECEC"><?php the_date('d.m.Y '); the_title(); ?></p>
 
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <p><em><?php the_time('l, F jS, Y'); ?></em></p>
-            <hr>
-        <?php endwhile;
-        else: ?>
-            <p><?php _e('404'); ?></p>
-        <?php endif; ?>
-    </div>
-
-
+                </header>
+                <!-- Display movie review contents -->
+                <div class="entry-content"><?php the_content(); ?></div>
+            </article>
+        <?php endwhile; ?>
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>

@@ -1,8 +1,8 @@
 /*
 Theme Name: datarec
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: http://datarec.com.ua/
+Author: Malahov Sergey
+Author URI: http://datarec.com.ua/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -48,7 +48,7 @@ body {
 	padding: 0 0 0 140px;
 	margin: 0;
 	line-height: 1.4em;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 #banner_left h2 {
@@ -57,11 +57,11 @@ body {
 	padding: 0 0 0 141px;
 	margin: 0 0 1px;
 	line-height: 1em;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 #contactInfo {
-	padding: 40px 23px 0 0px;
+	padding: 40px 23px 0 0;
 	float: right;
 	width: 390px;
 	font-size: 13px;
@@ -98,7 +98,7 @@ body {
 #nav {
 	font-size: 80%;
 	font-weight: bold;
-	margin: 10px 0px;
+	margin: 10px 0;
 	padding: 0;
 	line-height: 0.8em;
 
@@ -106,8 +106,8 @@ body {
 
 #nav li {
 	display: inline;
-	margin: 0px;
-	padding: 0px 30px 0px 17px;
+	margin: 0;
+	padding: 0 30px 0 17px;
 	line-height: 0.8em;
 	list-style-type: none;
 	background: url(images/menu_marker.gif) no-repeat 0;
@@ -132,8 +132,8 @@ body {
 	float: right;
 	font-size: 90%;
 	text-align: center;
-	margin: 15px 0px;
-	padding: 0px 15px;
+	margin: 15px 0;
+	padding: 0 15px;
 	border-left: #BFBFBF 1px dashed;
 
 }
@@ -155,8 +155,8 @@ body {
 }
 
 #rightcol p {
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0;
+	margin-right: 0;
 
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 .devider {
-	margin: 10px 0px;
+	margin: 10px 0;
 	border: 0;
 	height: 1px;
 	width: 261px;
@@ -240,114 +240,114 @@ th.price {
 	text-align: center;
 }
 
-div#price .description {
+#price .description {
 	padding: 0 0 13px;
 	background-color: silver;
 	color: #182c3b;
 }
 
-div#price ul.tab-list {
-	margin: 0px;
+#price ul.tab-list {
+	margin: 0;
 }
 
-div#price ul.tab-list li {
+#price ul.tab-list li {
 	background: none;
-	padding: 0px;
+	padding: 0;
 }
 
-div#price ul.tab-list ._1 {
+#price ul.tab-list ._1 {
 	width: 119px;
 }
 
-div#price ul.tab-list ._2 {
+#price ul.tab-list ._2 {
 	width: 162px;
 }
 
-div#price ul.tab-list ._3 {
+#price ul.tab-list ._3 {
 	width: 162px;
 }
 
-div#price div.open-tab {
+#price div.open-tab {
 	border-bottom: none;
 }
 
-div#price div.tabs {
+#price div.tabs {
 	background: no-repeat bottom center;
 	padding-bottom: 46px;
 	border-bottom: 1px solid #dedcdc;
 }
 
-table#price-table {
+#price-table {
 	width: 100%;
 	margin: 0 0 40px;
 	border-collapse: collapse;
 	border: 1px solid #dedcdc;
 }
 
-table#price-table td, table#price-table th {
+#price-table td, table#price-table th {
 	border-collapse: collapse;
 	border: 1px solid #C0C0C0;
 	font-size: small;
 }
 
-table#price-table th {
+#price-table th {
 	height: 20px;
 	color: #393939;
 	background-color: #E0E0E0;
 	vertical-align: middle;
 }
 
-table#price-table .number {
+#price-table .number {
 	width: 11px;
 }
 
-table#price-table .price {
+#price-table .price {
 	width: 103px;
 }
 
-table#price-table .count {
+#price-table .count {
 	width: 58px;
 }
 
-table#price-table th.number, table#price-table th.descr {
+#price-table th.number, table#price-table th.descr {
 	padding-left: 10px;
 	text-align: left;
 }
 
-table#price-table td.number, table#price-table td.price, table#price-table td.count {
+e#price-table td.number, table#price-table td.price, table#price-table td.count {
 	text-align: center;
 }
 
-table#price-table td.price, table#price-table td.count {
+#price-table td.price, table#price-table td.count {
 	color: #24518a;
 }
 
-table#price-table td {
+#price-table td {
 	vertical-align: central;
 	padding: 2px 5px;
 
 }
 
-table#price-table a.title {
+#price-table a.title {
 	display: inline-block;
 	margin: 0 0 2px;
 }
 
-table#price-table span.title {
+#price-table span.title {
 	display: inline-block;
 	margin: 0 0 2px;
 	color: #646e76;
 }
 
-table#price-table td.count .total {
+#price-table td.count .total {
 	display: inline-block;
 	padding: 1px 5px 2px;
 	word-spacing: 10px;
 	background: #f6f6f8;
-	border: 0px solid #dedcdc;
+	border: 0 solid #dedcdc;
 }
 
-table#price-table td.count input.pricelist_count {
+#price-table td.count input.pricelist_count {
 	background: none;
 	border: none;
 	width: 17px;
@@ -355,7 +355,7 @@ table#price-table td.count input.pricelist_count {
 	color: inherit;
 }
 
-div#price ul.note-list {
+#price ul.note-list {
 	margin: 0 0 38px;
 }
 
