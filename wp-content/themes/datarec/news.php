@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: news
+*/
+
+ get_header(); ?>
 
     <div id="rightcol">
 
