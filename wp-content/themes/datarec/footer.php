@@ -1,3 +1,4 @@
+<div style="clear:both"></div>
 <footer>
     <p>Логотипы, торговые марки и прочие зарегистрированные знаки принадлежат их правообладателям.
         <br>
@@ -22,9 +23,7 @@
         </script>
     </noindex>
 </div>
-
 </div>
-
 <script src="scripts/scripts.js"></script>
 
 <?php wp_footer(); ?>

@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
     <div id="rightcol">
-<n2>
+
         <?php
         get_sidebar();
-        require_once 'shops.php';
         ?>
 
     </div>
