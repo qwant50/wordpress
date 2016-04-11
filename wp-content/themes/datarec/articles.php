@@ -6,11 +6,11 @@ Template Name: articles
 
 get_header(); ?>
 
-    <div id="rightcol">
+    <section id="rightcol">
         <?php get_sidebar(); ?>
-    </div>
+    </section>
 
-    <div id="content">
+    <section id="content">
 
         <?php
         $arg2 = [
@@ -27,7 +27,7 @@ get_header(); ?>
                     <div style="float: right; margin: 10px">
                         <?php the_post_thumbnail(array(100, 100)); ?>
                     </div>
-                    <h2><span style="background-color: #ECECEC"><?php the_time('d.m.Y ', $query->post->ID) ?><a
+                    <h2><span style="background-color: #ECECEC"><?php the_time('d.m.Y ') ?><a
                                 href="<?php the_permalink() ?>"><?php the_title(); ?></a></span></h2>
                 </header>
                 <?php the_content(); ?>
@@ -37,5 +37,5 @@ get_header(); ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
         <?php wp_reset_query(); ?>
-    </div>
+    </section>
 <?php get_footer(); ?>

@@ -5,14 +5,14 @@ Template Name: news
 
 get_header(); ?>
 
-    <div id="rightcol">
+    <section id="rightcol">
         <?php get_sidebar(); ?>
-    </div>
+    </section>
 
-    <div id="content">
+    <section id="content">
         <h2>Последние новости</h2>
         <?php
-        $arg = array('post_type' => 'news',);
+        $arg = ['post_type' => 'news'];
         $posts = new WP_Query($arg);
         ?>
         <?php while ($posts->have_posts()) : $posts->the_post(); ?>
@@ -31,6 +31,5 @@ get_header(); ?>
             </article>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
-    </div>
-
+    </section>
 <?php get_footer(); ?>
