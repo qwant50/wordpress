@@ -18,5 +18,20 @@
     wp_reset_query();
 
 endif;
-require_once 'shops.php';
-?>
+
+$arg = [
+    'category' => 'banners',
+    'orderby' => 'date',
+    'order' => 'ASC',
+];
+$query = new WP_Query($arg);
+
+if ($query->have_posts()) : ?>
+    <h2>Наши магазины</h2>
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
+        <?php the_content(); ?>
+        <img class="devider"/>
+    <?php endwhile;
+endif; ?>
+<?php wp_reset_query(); ?>
+

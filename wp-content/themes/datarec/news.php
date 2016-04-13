@@ -20,7 +20,7 @@ get_header(); ?>
                 <header>
                     <!-- Display featured image in right-aligned floating div -->
                     <div style="float: right; margin: 10px">
-                        <?php the_post_thumbnail(array(100, 100)); ?>
+                        <?php the_post_thumbnail([100, 100]); ?>
                     </div>
 
                     <p style="background-color: #ECECEC"><?php the_date('d.m.Y '); ?><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>

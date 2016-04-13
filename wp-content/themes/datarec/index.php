@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
     <div id="rightcol">
-
-        <?php
-        get_sidebar();
-        ?>
-
+        <?php get_sidebar(); ?>
     </div>
 
     <div id="content">
